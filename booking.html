@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./Java/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>100SMILES</h2>
+            <p>DENTAL CARE</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+        </ul>
+    </div>
+
+
+    <div class="overlay"></div>
+
+    <main class="booking-container">
+        <div class="booking-header">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your dental appointment online and receive a 25% discount on your next visit!</p>
+        </div>
+
+        <div class="booking-content">
+            <div class="booking-info">
+                <h2>Why Book Online?</h2>
+                <ul>
+                    <li>✓ 24/7 appointment scheduling</li>
+                    <li>✓ Instant confirmation</li>
+                    <li>✓ 25% discount on your next visit</li>
+                    <li>✓ Choose your preferred dentist</li>
+                    <li>✓ Reminder notifications</li>
+                </ul>
+
+                <div class="booking-announcement">
+                    <h3>Special Offers</h3>
+                    <p>Join us for a free dental checkup on Saturday 5th July, starting at 9 am*</p>
+                    <p>Until April 30, enjoy a 10% discount on your Annual Dental Check-Up at 100SMILES Dental Care*</p>
+                </div>
+
+                <div class="booking-contact">
+                    <h3>Need Help?</h3>
+                    <p>Call us: 07 5000 5599</p>
+                    <p>Email: admin@100smilesdentalcare.com.au</p>
+                    <p>Address: 33 Fantail Street, Razole, Queensland</p>
+                </div>
+            </div>
+
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>Booking Successful!</h2>
+                    <p>Your booking is successful and we will contact you shortly to confirm your appointment.</p>
+                    <p class="success-details">Thank you for choosing 100SMILES Dental Care for your dental needs.</p>
+                    <p class="discount-reminder">Remember: You'll receive a 25% discount on your next visit!</p>
+                    <button id="closeSuccessBtn" class="close-success-btn">Book Another Appointment</button>
+                </div>
+            </div>
+
+
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date*</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time*</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (8:30 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM - 6:30 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required*</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="check-up">Regular Check-up</option>
+                        <option value="cleaning">Teeth Cleaning</option>
+                        <option value="whitening">Teeth Whitening</option>
+                        <option value="implants">Dental Implants</option>
+                        <option value="orthodontics">Orthodontics</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="root-canal">Root Canal Treatment</option>
+                        <option value="pediatric">Pediatric Dentistry</option>
+                        <option value="emergency">Emergency Care</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dentist">Preferred Dentist</label>
+                    <select id="dentist" name="dentist">
+                        <option value="">No preference</option>
+                        <option value="dr-grey">Dr. Johanna Grey (Orthodontics)</option>
+                        <option value="dr-carter">Dr. Emily Carter (Pediatric Dentist)</option>
+                        <option value="dr-sloan">Dr. Benedict Sloan</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="isNewPatient" name="isNewPatient" value="yes">
+                    <label for="isNewPatient">I am a new patient</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Please share any specific concerns or requirements"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">terms and conditions</a>*</label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBooking">Book Appointment</button>
+
+                <p class="form-note">* Required fields</p>
+                <p class="discount-note">Book online today and receive a 25% discount on your next visit!</p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 100SMILES Dental Care. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./Java/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>100SMILES</h2>
+            <p>DENTAL CARE</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+    <div class="overlay"></div>
+
+    <main class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="confirmation-icon">✓</div>
+            <h1 class="confirmation-title">Booking Confirmed!</h1>
+            <p class="confirmation-message">
+                Your booking is successful and we will contact you shortly to confirm your appointment.
+                <br>Thank you for choosing 100SMILES Dental Care for your dental needs.
+            </p>
+
+            <div class="confirmation-details">
+                <h3>Booking Details</h3>
+                <div id="bookingDetails">
+
+                </div>
+            </div>
+
+            <div class="confirmation-note">
+                <h3>Important Information</h3>
+                <p>Please arrive 10 minutes before your scheduled appointment time.</p>
+                <p>Don't forget to bring your ID and any previous dental records if available.</p>
+                <p>If you need to reschedule, please contact us at least 24 hours in advance.</p>
+            </div>
+
+            <p class="discount-reminder">
+                <strong>Remember:</strong> You'll receive a 25% discount on your next visit!
+            </p>
+
+            <button class="print-btn" onclick="window.print()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                Print Confirmation
+            </button>
+
+            <div class="button-group">
+                <a href="index.html" class="secondary-btn">Return to Homepage</a>
+                <a href="booking.html" class="primary-btn">Book Another Appointment</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 100SMILES Dental Care. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
