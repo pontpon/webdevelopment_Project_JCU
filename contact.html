@@ -1,1 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Us | 100SMILES</title><link rel="stylesheet" href="CSS/styles.css"><script src="Java/script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="team.html">Our Team</a></li><li><a href="articles.html">Articles</a></li><li><a href="promotion.html">Promotion</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Booking</a></li><li><a href="contact.html">Contact Us</a></li></ul><a class="btn" href="booking.html">Book appointment</a></nav></header><main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">We’re here to help</span><h1>Contact 100SMILES</h1><p>Ask a question, plan a visit or get help choosing the right appointment category.</p></div></section><section class="section"><div class="container split" style="align-items:start"><div><h2>Get in touch</h2><div class="grid"><div class="card"><h3>Phone</h3><a data-clinic="phone"></a></div><div class="card"><h3>Email</h3><a data-clinic="email"></a></div><div class="card"><h3>Visit</h3><p data-clinic="address"></p><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=33+Fantail+Street+Razole+Queensland" target="_blank" rel="noopener">Open map</a></div><div class="card"><h3>Opening hours</h3><p data-clinic="hours"></p></div></div><div class="notice"><strong>Urgent dental concern?</strong> Call the clinic for guidance during opening hours. 100SMILES is not presented as a 24-hour emergency service.</div><a class="btn" href="booking.html">Book an appointment</a></div><div class="card form-card"><h2>Send an enquiry</h2><p>This demonstration form validates your message but does not send it.</p><form id="contactForm" novalidate><div class="field"><label for="contactName">Name <span class="required">*</span></label><input id="contactName" required autocomplete="name"></div><div class="field-row"><div class="field"><label for="contactEmail">Email <span class="required">*</span></label><input id="contactEmail" type="email" required autocomplete="email"></div><div class="field"><label for="contactPhone">Phone</label><input id="contactPhone" type="tel" autocomplete="tel"></div></div><div class="field"><label for="category">Enquiry category <span class="required">*</span></label><select id="category" required><option value="">Choose a category</option><option>Appointment</option><option>Services</option><option>Promotion</option><option>General enquiry</option></select></div><div class="field"><label for="contactMessage">Message <span class="required">*</span></label><textarea id="contactMessage" required rows="6"></textarea></div><button class="btn" type="submit" data-label="Validate message">Validate message</button><div class="alert" hidden tabindex="-1" aria-live="polite"></div></form></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><h3>100SMILES Dental Care</h3><p>Professional, welcoming dental care.</p></div><div><h3>Contact</h3><p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p></div><div><h3>Address</h3><p data-clinic="address"></p></div><div><h3>Hours</h3><p data-clinic="hours"></p></div></div><div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div></div></footer><button class="back-top" aria-label="Back to top">↑</button></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact Us | 100SMILES</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Java/script.js" defer></script>
+</head>
+
+<body><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation"><a class="brand"
+                href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle"
+                aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul><a class="btn" href="booking.html">Book appointment</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">We’re here to help</span>
+                <h1>Contact 100SMILES</h1>
+                <p>Ask a question, plan a visit or get help choosing the right appointment category.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container split" style="align-items:start">
+                <div>
+                    <h2>Get in touch</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Phone</h3><a data-clinic="phone"></a>
+                        </div>
+                        <div class="card">
+                            <h3>Email</h3><a data-clinic="email"></a>
+                        </div>
+                        <div class="card">
+                            <h3>Visit</h3>
+                            <p data-clinic="address"></p><a class="btn secondary"
+                                href="https://www.google.com/maps/search/?api=1&query=33+Fantail+Street+Razole+Queensland"
+                                target="_blank" rel="noopener">Open map</a>
+                        </div>
+                        <div class="card">
+                            <h3>Opening hours</h3>
+                            <p data-clinic="hours"></p>
+                        </div>
+                    </div>
+                    <div class="notice"><strong>Urgent dental concern?</strong> Call the clinic for guidance during
+                        opening hours. 100SMILES is not presented as a 24-hour emergency service.</div><a class="btn"
+                        href="booking.html">Book an appointment</a>
+                </div>
+                <div class="card form-card">
+                    <h2>Send an enquiry</h2>
+                    <p>This demonstration form validates your message but does not send it.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="field"><label for="contactName">Name <span class="required">*</span></label><input
+                                id="contactName" required autocomplete="name"></div>
+                        <div class="field-row">
+                            <div class="field"><label for="contactEmail">Email <span
+                                        class="required">*</span></label><input id="contactEmail" type="email" required
+                                    autocomplete="email"></div>
+                            <div class="field"><label for="contactPhone">Phone</label><input id="contactPhone"
+                                    type="tel" autocomplete="tel"></div>
+                        </div>
+                        <div class="field"><label for="category">Enquiry category <span
+                                    class="required">*</span></label><select id="category" required>
+                                <option value="">Choose a category</option>
+                                <option>Appointment</option>
+                                <option>Services</option>
+                                <option>Promotion</option>
+                                <option>General enquiry</option>
+                            </select></div>
+                        <div class="field"><label for="contactMessage">Message <span
+                                    class="required">*</span></label><textarea id="contactMessage" required
+                                rows="6"></textarea></div><button class="btn" type="submit"
+                            data-label="Validate message">Validate message</button>
+                        <div class="alert" hidden tabindex="-1" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>100SMILES Dental Care</h3>
+                    <p>Professional, welcoming dental care.</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p data-clinic="address"></p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p data-clinic="hours"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div>
+        </div>
+    </footer><button class="back-top" aria-label="Back to top">↑</button>
+</body>
+
+</html>
