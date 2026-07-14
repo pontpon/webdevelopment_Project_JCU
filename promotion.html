@@ -1,4 +1,144 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Promotions | 100SMILES Dental Care</title><link rel="stylesheet" href="CSS/styles.css"><script src="Java/script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="team.html">Our Team</a></li><li><a href="articles.html">Articles</a></li><li><a href="promotion.html">Promotion</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Booking</a></li><li><a href="contact.html">Contact Us</a></li></ul><a class="btn" href="booking.html">Book appointment</a></nav></header><main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">Clinic offers</span><h1>Promotions, clearly dated</h1><p>Offer status is checked automatically so past promotions are clearly separated from current information.</p></div></section><section class="section"><div class="container"><div class="section-head"><h2>Active promotions</h2><p>There are currently no confirmed active promotions. Please contact the clinic for the latest offers.</p></div><div id="activePromotions" class="grid three"></div><div class="section-head" style="margin-top:60px"><h2>Upcoming promotions</h2><p>No upcoming promotions are currently published.</p></div></div></section><section class="section soft"><div class="container"><div class="section-head"><span class="eyebrow">Archive</span><h2>Expired promotions</h2><p>These legacy offers are retained for transparency and cannot be booked.</p></div><div id="expiredPromotions" class="grid three">
-<article class="card" data-expiry="2025-07-05"><span class="status">Checking status…</span><h3>Free Dental Checkup Day</h3><p><strong>Saturday, 5 July 2025</strong></p><p>A limited clinic event offering a dental check-up. This date has passed.</p><p><small>Conditions and limited places applied.</small></p><a class="btn promo-action" href="booking.html">Request booking</a></article>
-<article class="card" data-expiry="2025-12-31"><span class="status">Checking status…</span><h3>New Patient Special</h3><p><strong>Valid during 2025</strong></p><p>A legacy introductory offer for new patients.</p><p><small>Original conditions applied. Contact the clinic for current pricing.</small></p><a class="btn promo-action" href="booking.html">Request booking</a></article>
-<article class="card" data-expiry="2025-12-31"><span class="status">Checking status…</span><h3>Online Booking Discount</h3><p><strong>Valid during 2025</strong></p><p>A legacy offer associated with online booking.</p><p><small>The current website does not claim this discount remains active.</small></p><a class="btn promo-action" href="booking.html">Request booking</a></article></div></div></section><section class="section"><div class="container"><div class="section-head"><span class="eyebrow">Modern dentistry</span><h2>Dental technology at 100SMILES</h2></div><div class="grid three reveal"><article class="card tech-card"><img src="Images/Images/tooth.jpeg" alt="CAD/CAM dental technology"><div class="card-body"><h3>CAD/CAM Technology</h3><p>Digital workflows can support the design and production of dental restorations.</p><a href="services.html#technology">Explore technology services →</a></div></article><article class="card tech-card"><img src="Images/Images/toothxray.jpeg" alt="Digital dental X-ray"><div class="card-body"><h3>Digital X-Rays</h3><p>Digital imaging supports dental assessment and treatment planning.</p><a href="services.html#technology">Explore technology services →</a></div></article><article class="card tech-card"><img src="Images/Images/teeth.jpeg" alt="Laser dentistry equipment"><div class="card-body"><h3>Laser Dentistry</h3><p>Laser tools may support selected dental procedures where appropriate.</p><a href="services.html#technology">Explore technology services →</a></div></article></div></div></section><section class="section soft"><div class="container cta"><h2>Ask about current offers</h2><p>Our team can confirm pricing, availability and any current promotion conditions.</p><a class="btn" href="contact.html">Contact the clinic</a></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><h3>100SMILES Dental Care</h3><p>Clear information and welcoming dental care.</p></div><div><h3>Contact</h3><p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p></div><div><h3>Address</h3><p data-clinic="address"></p></div><div><h3>Hours</h3><p data-clinic="hours"></p></div></div><div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div></div></footer><button class="back-top" aria-label="Back to top">↑</button></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promotions | 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Java/script.js" defer></script>
+</head>
+
+<body><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation"><a class="brand"
+                href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle"
+                aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul><a class="btn" href="booking.html">Book appointment</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">Clinic offers</span>
+                <h1>Promotions, clearly dated</h1>
+                <p>Offer status is checked automatically so past promotions are clearly separated from current
+                    information.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Active promotions</h2>
+                    <p>There are currently no confirmed active promotions. Please contact the clinic for the latest
+                        offers.</p>
+                </div>
+                <div id="activePromotions" class="grid three"></div>
+                <div class="section-head" style="margin-top:60px">
+                    <h2>Upcoming promotions</h2>
+                    <p>No upcoming promotions are currently published.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section soft">
+            <div class="container">
+                <div class="section-head"><span class="eyebrow">Archive</span>
+                    <h2>Expired promotions</h2>
+                    <p>These legacy offers are retained for transparency and cannot be booked.</p>
+                </div>
+                <div id="expiredPromotions" class="grid three">
+                    <article class="card" data-expiry="2025-07-05"><span class="status">Checking status…</span>
+                        <h3>Free Dental Checkup Day</h3>
+                        <p><strong>Saturday, 5 July 2025</strong></p>
+                        <p>A limited clinic event offering a dental check-up. This date has passed.</p>
+                        <p><small>Conditions and limited places applied.</small></p><a class="btn promo-action"
+                            href="booking.html">Request booking</a>
+                    </article>
+                    <article class="card" data-expiry="2025-12-31"><span class="status">Checking status…</span>
+                        <h3>New Patient Special</h3>
+                        <p><strong>Valid during 2025</strong></p>
+                        <p>A legacy introductory offer for new patients.</p>
+                        <p><small>Original conditions applied. Contact the clinic for current pricing.</small></p><a
+                            class="btn promo-action" href="booking.html">Request booking</a>
+                    </article>
+                    <article class="card" data-expiry="2025-12-31"><span class="status">Checking status…</span>
+                        <h3>Online Booking Discount</h3>
+                        <p><strong>Valid during 2025</strong></p>
+                        <p>A legacy offer associated with online booking.</p>
+                        <p><small>The current website does not claim this discount remains active.</small></p><a
+                            class="btn promo-action" href="booking.html">Request booking</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head"><span class="eyebrow">Modern dentistry</span>
+                    <h2>Dental technology at 100SMILES</h2>
+                </div>
+                <div class="grid three reveal">
+                    <article class="card tech-card"><img src="Images/Images/tooth.jpeg" alt="CAD/CAM dental technology">
+                        <div class="card-body">
+                            <h3>CAD/CAM Technology</h3>
+                            <p>Digital workflows can support the design and production of dental restorations.</p><a
+                                href="services.html#technology">Explore technology services →</a>
+                        </div>
+                    </article>
+                    <article class="card tech-card"><img src="Images/Images/toothxray.jpeg" alt="Digital dental X-ray">
+                        <div class="card-body">
+                            <h3>Digital X-Rays</h3>
+                            <p>Digital imaging supports dental assessment and treatment planning.</p><a
+                                href="services.html#technology">Explore technology services →</a>
+                        </div>
+                    </article>
+                    <article class="card tech-card"><img src="Images/Images/teeth.jpeg" alt="Laser dentistry equipment">
+                        <div class="card-body">
+                            <h3>Laser Dentistry</h3>
+                            <p>Laser tools may support selected dental procedures where appropriate.</p><a
+                                href="services.html#technology">Explore technology services →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section soft">
+            <div class="container cta">
+                <h2>Ask about current offers</h2>
+                <p>Our team can confirm pricing, availability and any current promotion conditions.</p><a class="btn"
+                    href="contact.html">Contact the clinic</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>100SMILES Dental Care</h3>
+                    <p>Clear information and welcoming dental care.</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p data-clinic="address"></p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p data-clinic="hours"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div>
+        </div>
+    </footer><button class="back-top" aria-label="Back to top">↑</button>
+</body>
+
+</html>
