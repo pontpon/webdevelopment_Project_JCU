@@ -1,1 +1,155 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book an Appointment | 100SMILES</title><link rel="stylesheet" href="CSS/styles.css"><script src="Java/script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="team.html">Our Team</a></li><li><a href="articles.html">Articles</a></li><li><a href="promotion.html">Promotion</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Booking</a></li><li><a href="contact.html">Contact Us</a></li></ul><a class="btn" href="booking.html">Book appointment</a></nav></header><main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">Online appointment request</span><h1>Plan your next visit</h1><p>Choose your preferred details. Our team will contact you to confirm availability.</p></div></section><section class="section soft"><div class="container split" style="align-items:start"><aside><span class="eyebrow">Simple and convenient</span><h2>Request a visit at any time</h2><ul class="check-list"><li>Choose a preferred date and time</li><li>Select a service and dentist preference</li><li>Review a clear confirmation summary</li></ul><div class="card"><h3>Clinic details</h3><p><strong>Phone</strong><br><a data-clinic="phone"></a></p><p><strong>Email</strong><br><a data-clinic="email"></a></p><p><strong>Address</strong><br><span data-clinic="address"></span></p><p><strong>Opening hours</strong><br><span data-clinic="hours"></span></p></div><div class="notice">Your details are used only to create the on-screen demonstration summary. Medical notes are not stored.</div></aside><div class="card form-card"><form id="bookingForm" novalidate><h2>Appointment details</h2><h3>Patient information</h3><div class="field-row"><div class="field"><label for="fullName">Full name <span class="required">*</span></label><input id="fullName" name="fullName" required autocomplete="name"><div class="error-text"></div></div><div class="field"><label for="email">Email <span class="required">*</span></label><input id="email" name="email" type="email" required autocomplete="email"><div class="error-text"></div></div></div><div class="field"><label for="phone">Phone number <span class="required">*</span></label><input id="phone" name="phone" type="tel" required pattern="[0-9 +()-]{8,20}" autocomplete="tel"><div class="error-text"></div></div><div class="field"><label><input style="width:auto" type="checkbox" name="newPatient"> I am a new patient</label></div><h3>Appointment details</h3><div class="field-row"><div class="field"><label for="date">Preferred date <span class="required">*</span></label><input id="date" name="date" type="date" required><div class="error-text"></div></div><div class="field"><label for="time">Preferred time <span class="required">*</span></label><select id="time" name="time" required><option value="">Select a time</option><option>Morning (8:30am–12:00pm)</option><option>Afternoon (1:00pm–4:00pm)</option><option>Evening (4:00pm–6:30pm)</option></select><div class="error-text"></div></div></div><div class="field-row"><div class="field"><label for="service">Service required <span class="required">*</span></label><select id="service" name="service" required><option value="">Select a service</option><option>Regular check-up</option><option>Teeth cleaning</option><option>Teeth whitening</option><option>Dental implants</option><option>Orthodontics</option><option>Cosmetic dentistry</option><option>Root canal treatment</option><option>Pediatric dentistry</option></select><div class="error-text"></div></div><div class="field"><label for="dentist">Preferred dentist</label><select id="dentist" name="dentist"><option value="">Any available dentist</option><option>Dr. Johanna Grey</option><option>Dr. Emily Carter</option><option>Dr. Benedict Sloan</option></select></div></div><h3>Additional information</h3><div class="field"><label for="message">Notes (optional)</label><textarea id="message" name="message" rows="4"></textarea></div><div class="field"><label><input style="width:auto" type="checkbox" required> I understand this is an appointment request and requires clinic confirmation. <span class="required">*</span></label><div class="error-text"></div></div><button class="btn" type="submit">Review request</button></form><div id="bookingSummary" hidden tabindex="-1" aria-live="polite"></div></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><h3>100SMILES Dental Care</h3><p>Your welcoming local dental team.</p></div><div><h3>Contact</h3><p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p></div><div><h3>Address</h3><p data-clinic="address"></p></div><div><h3>Hours</h3><p data-clinic="hours"></p></div></div><div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div></div></footer><button class="back-top" aria-label="Back to top">↑</button></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Book an Appointment | 100SMILES</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Java/script.js" defer></script>
+</head>
+
+<body><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation"><a class="brand"
+                href="index.html"><strong>100SMILES</strong><small>DENTAL CARE</small></a><button class="nav-toggle"
+                aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul><a class="btn" href="booking.html">Book appointment</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">Online appointment request</span>
+                <h1>Plan your next visit</h1>
+                <p>Choose your preferred details. Our team will contact you to confirm availability.</p>
+            </div>
+        </section>
+        <section class="section soft">
+            <div class="container split" style="align-items:start">
+                <aside><span class="eyebrow">Simple and convenient</span>
+                    <h2>Request a visit at any time</h2>
+                    <ul class="check-list">
+                        <li>Choose a preferred date and time</li>
+                        <li>Select a service and dentist preference</li>
+                        <li>Review a clear confirmation summary</li>
+                    </ul>
+                    <div class="card">
+                        <h3>Clinic details</h3>
+                        <p><strong>Phone</strong><br><a data-clinic="phone"></a></p>
+                        <p><strong>Email</strong><br><a data-clinic="email"></a></p>
+                        <p><strong>Address</strong><br><span data-clinic="address"></span></p>
+                        <p><strong>Opening hours</strong><br><span data-clinic="hours"></span></p>
+                    </div>
+                    <div class="notice">Your details are used only to create the on-screen demonstration summary.
+                        Medical notes are not stored.</div>
+                </aside>
+                <div class="card form-card">
+                    <form id="bookingForm" novalidate>
+                        <h2>Appointment details</h2>
+                        <h3>Patient information</h3>
+                        <div class="field-row">
+                            <div class="field"><label for="fullName">Full name <span
+                                        class="required">*</span></label><input id="fullName" name="fullName" required
+                                    autocomplete="name">
+                                <div class="error-text"></div>
+                            </div>
+                            <div class="field"><label for="email">Email <span class="required">*</span></label><input
+                                    id="email" name="email" type="email" required autocomplete="email">
+                                <div class="error-text"></div>
+                            </div>
+                        </div>
+                        <div class="field"><label for="phone">Phone number <span class="required">*</span></label><input
+                                id="phone" name="phone" type="tel" required pattern="[0-9 +()-]{8,20}"
+                                autocomplete="tel">
+                            <div class="error-text"></div>
+                        </div>
+                        <div class="field"><label><input style="width:auto" type="checkbox" name="newPatient"> I am a
+                                new patient</label></div>
+                        <h3>Appointment details</h3>
+                        <div class="field-row">
+                            <div class="field"><label for="date">Preferred date <span
+                                        class="required">*</span></label><input id="date" name="date" type="date"
+                                    required>
+                                <div class="error-text"></div>
+                            </div>
+                            <div class="field"><label for="time">Preferred time <span
+                                        class="required">*</span></label><select id="time" name="time" required>
+                                    <option value="">Select a time</option>
+                                    <option>Morning (8:30am–12:00pm)</option>
+                                    <option>Afternoon (1:00pm–4:00pm)</option>
+                                    <option>Evening (4:00pm–6:30pm)</option>
+                                </select>
+                                <div class="error-text"></div>
+                            </div>
+                        </div>
+                        <div class="field-row">
+                            <div class="field"><label for="service">Service required <span
+                                        class="required">*</span></label><select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option>Regular check-up</option>
+                                    <option>Teeth cleaning</option>
+                                    <option>Teeth whitening</option>
+                                    <option>Dental implants</option>
+                                    <option>Orthodontics</option>
+                                    <option>Cosmetic dentistry</option>
+                                    <option>Root canal treatment</option>
+                                    <option>Pediatric dentistry</option>
+                                </select>
+                                <div class="error-text"></div>
+                            </div>
+                            <div class="field"><label for="dentist">Preferred dentist</label><select id="dentist"
+                                    name="dentist">
+                                    <option value="">Any available dentist</option>
+                                    <option>Dr. Johanna Grey</option>
+                                    <option>Dr. Emily Carter</option>
+                                    <option>Dr. Benedict Sloan</option>
+                                </select></div>
+                        </div>
+                        <h3>Additional information</h3>
+                        <div class="field"><label for="message">Notes (optional)</label><textarea id="message"
+                                name="message" rows="4"></textarea></div>
+                        <div class="field"><label><input style="width:auto" type="checkbox" required> I understand this
+                                is an appointment request and requires clinic confirmation. <span
+                                    class="required">*</span></label>
+                            <div class="error-text"></div>
+                        </div><button class="btn" type="submit">Review request</button>
+                    </form>
+                    <div id="bookingSummary" hidden tabindex="-1" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>100SMILES Dental Care</h3>
+                    <p>Your welcoming local dental team.</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p><a data-clinic="phone"></a><br><a data-clinic="email"></a></p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p data-clinic="address"></p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p data-clinic="hours"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">© <span data-year></span> 100SMILES Dental Care</div>
+        </div>
+    </footer><button class="back-top" aria-label="Back to top">↑</button>
+</body>
+
+</html>
